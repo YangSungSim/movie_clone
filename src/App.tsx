@@ -8,7 +8,7 @@ function App() {
   return <Router>
     <Header />
     <Switch>
-      <Route path="/">
+      <Route  exact={true} path="/">
         <Home />
       </Route>
       <Route path="/tv">
