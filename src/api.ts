@@ -26,3 +26,11 @@ export function getMovies() {
         response => response.json()
     )
 }
+
+
+
+export const getTv = ({pageParam}:{pageParam:number})  => {
+    return fetch(`${BASE_PATH}/tv/on_the_air?api_key=${API_KEY}&language=en-US&page=`+pageParam+"").then(
+        response => response.json()
+    );
+}
